@@ -7,12 +7,26 @@ body {
   max-width: 960px;
 }
 
-.header__logo {
-
+.header {
+  text-align: right;
 }
 
-.header__text {
-  float: right;
+.header__logo {
+  float: left;
+  height: 75px;
+}
+
+.header__heading {
+  font-family: 'Fredoka One', cursive;
+  font-weight: 400;
+  font-size: 3em;
+  margin: 0;
+}
+
+.header__subheading {
+  font-family: 'Fredoka One', cursive;
+  font-weight: 100;
+  margin: 0;
 }
 
 .background {
@@ -23,11 +37,12 @@ body {
   display: flex;
   flex-wrap: wrap;
   text-align: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .featured__heading {
-
+  font-family: 'Fredoka One', cursive;
+  font-weight: 100;
 }
 
 .featured__project {
@@ -35,7 +50,6 @@ body {
   min-width: 200px;
   padding: 10px;
   border: 3px solid black;
-  margin: 20px;
 }
 
 .featured__project img {
