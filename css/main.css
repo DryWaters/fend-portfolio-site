@@ -7,6 +7,10 @@ body {
   max-width: 960px;
 }
 
+a {
+  color: #8dc24c;
+}
+
 .header {
   text-align: right;
 }
@@ -37,34 +41,86 @@ body {
   display: flex;
   flex-wrap: wrap;
   text-align: center;
+  align-content: center;
   justify-content: space-between;
 }
 
 .featured__heading {
   font-family: 'Fredoka One', cursive;
   font-weight: 100;
+  font-size: 2em;
 }
 
 .featured__project {
   width: 28%;
   min-width: 200px;
   padding: 10px;
-  border: 3px solid black;
+  word-break: break-all;
+  background-color: #27292e;
+}
+
+.featured__title {
+  font-family: 'Fredoka One', cursive;
+  font-weight: bold;
+  font-size: 1.25em;
+  color: #8dc24c;
+  padding: 10px;
 }
 
 .featured__project img {
   margin: 0 auto; 
-  width: 75%;
+  width: 100%;
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (min-width: 551px) and (max-width: 660px) {
+  .header__logo {
+    width: 40%;
+    height: 60px;
+  }
+
+  .header__heading {
+    font-size: 2em;
+  }
+
+  .header__subheading {
+    font-size: 1em;
+  }
+
+  .featured__section {
+    justify-content: space-around;
+  }
+  
+  .featured__heading {
+    font-size: 1.5em;
+  }
+  
   .featured__project {
-    width: 100%;
+    width: 40%;
+    margin-top: 10px;
   }
 }
 
-@media screen and (min-width: 551px) and (max-width: 700px) {
+@media screen and (max-width: 550px) {
+  .header__logo {
+    width: 50%;
+    height: 50px;
+  }
+
+  .header__heading {
+    font-size: 1.5em;
+  }
+  
+  .header__subheading {
+    font-size: 1em;
+  }
+
+  .featured__heading {
+    font-size: 1.5em;
+    margin-bottom: 0;
+  }
+
   .featured__project {
-    width: 40%;
+    width: 100%;
+    margin-top: 20px;
   }
 }
