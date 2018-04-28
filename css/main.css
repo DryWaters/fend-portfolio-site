@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 50px auto;
+  max-width: 960px;
+}
+
+.header__logo {
+
+}
+
+.header__text {
+  float: right;
+}
+
+.background {
+  width: 100%;
+}
+
+.featured__section {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: space-around;
+}
+
+.featured__heading {
+
+}
+
+.featured__project {
+  width: 28%;
+  min-width: 200px;
+  padding: 10px;
+  border: 3px solid black;
+  margin: 20px;
+}
+
+.featured__project img {
+  margin: 0 auto; 
+  width: 75%;
+}
+
+@media screen and (max-width: 550px) {
+  .featured__project {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 551px) and (max-width: 700px) {
+  .featured__project {
+    width: 40%;
+  }
+}
