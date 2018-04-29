@@ -11,6 +11,10 @@ a {
   color: #8dc24c;
 }
 
+hr {
+  width: 100%;
+}
+
 .header {
   text-align: right;
 }
@@ -66,7 +70,7 @@ a {
   text-transform: uppercase;
   font-size: 1.25em;
   color: #8dc24c;
-  margin-top: 0px;
+  margin-top: 0;
 }
 
 .featured__project img {
